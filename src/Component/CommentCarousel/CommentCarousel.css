@@ -1,0 +1,31 @@
+.CommentCarousel .first-image{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+}
+.CommentCarousel {
+    background-color: #EFE4DA;
+    width: 100%;
+}
+
+.CommentCarousel .d-flex{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.CommentCarousel p{
+    width: 50%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.CommentCarousel h3{
+    margin: 0;
+    padding: 0;
+}
+
+.CommentCarousel H5{
+    font-weight: 300;
+}

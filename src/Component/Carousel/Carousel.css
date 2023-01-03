@@ -1,0 +1,11 @@
+.third-bootstrap-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 500px;
+}
+
+.carousel{
+    width: 100%;
+    height: 600px;
+}

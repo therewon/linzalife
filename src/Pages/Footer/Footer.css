@@ -1,0 +1,59 @@
+.Footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #134072;
+}
+
+.Footer footer{
+    background-color: #134072;
+    width: 100%;
+    color: white !important;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Footer ul{
+    gap: 20px;
+}
+
+ul{
+    padding: 0 !important;
+}
+
+.Footer main{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.Footer main *{
+    margin-top: 20px;
+}
+
+.Footer .logo{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
+
+.Footer .first{
+    width: 50%;
+}
+
+
+.Footer button,.Footer input{
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: white;
+    color: #134072;
+}
+
+.Footer input:focus{
+    outline: none;
+}
+
