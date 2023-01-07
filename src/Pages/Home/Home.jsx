@@ -14,7 +14,7 @@ function Home() {
     },[])
     return (
         <div className="home">
-            <Carousel />
+            {/* <Carousel /> */}
             <main className="Home">
                 <div data-aos="fade-up">
                     <aside >

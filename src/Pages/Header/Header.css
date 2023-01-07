@@ -44,3 +44,16 @@
     border: none;
     font-weight: 600;
 }
+
+.Main header aside .menu-icon{
+    display: none;
+}
+
+@media screen and (max-width:1440px) {
+    .Main header aside ul{
+        display: none;
+    }
+    .Main header aside .menu-icon{
+        display: block;
+    }
+}

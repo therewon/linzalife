@@ -3,8 +3,9 @@ import "./Contact.css"
 function Contact(){
     return(
         <div className="Contact">
-            <h1>Contact
-            </h1>
+            <div className="header w-100 d-flex justify-content-center align-items-center">
+                <h1>All Collections</h1>
+            </div>
         </div>
     )
 }

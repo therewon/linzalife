@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
+import Item from './Pages/Item/Item';
 
 
 
@@ -25,10 +26,11 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} ></Route>
-        <Route path='/about' element={<Catalog />}></Route>
-        <Route path='/contact' element={<Catalog />}></Route>
+        <Route path='/about' element={<About />}></Route>
+        <Route path='/contact' element={<Contact />}></Route>
         <Route path='/profile' element={<Profile />}></Route>
         <Route path='/catalog' element={<Catalog />}></Route>
+        <Route path='/catalog/:id' element={<Item />}></Route>
       </Routes>
       <Footer />
     </div>

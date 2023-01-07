@@ -7,3 +7,49 @@
     border-radius: 5px;
     border: none;
 }
+
+.Catalog .header{
+    background-color: #134072;
+    height: 200px;
+    box-shadow: 0 0 10px grey;
+    margin-bottom: 40px;
+}
+
+.Catalog .header h1{
+    color: white !important;
+}
+
+.Catalog .info{
+    background: #efe4da;
+    border-radius: 0 0 5px 5px;
+    width: 400px;
+    height: 150px;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.Catalog .lens{
+    width: 390px;
+    height: 320px;
+    justify-content: space-between;
+    transition: .5s;
+    border-radius: 10px; 
+}
+
+.Catalog .lens:hover{
+    box-shadow: 0 0 15px grey;
+}
+
+
+.Catalog img{
+    width: 250px !important;
+    height: 150px;
+}
+
+.Catalog .name{
+    font-weight: 700;
+}
+
+.Catalog .info p{
+    font-weight: 600;
+}

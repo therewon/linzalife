@@ -8,6 +8,7 @@ function Main(){
             <header>
                 <img src="/images/linzalife.com.png"></img>
                 <aside>
+                    <button className="menu-icon"><i class="fa-solid fa-bars"></i></button>
                     <ul>
                         <li>
                             <Link to="/">HOME</Link>

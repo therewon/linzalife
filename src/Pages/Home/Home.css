@@ -93,3 +93,8 @@ hr{
 .Home .three-eyes{
     background-color: #EFE4DA;
 }
+
+@media screen and(max-width:1440px){
+    .Home div{
+    }
+}

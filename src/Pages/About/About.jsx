@@ -3,7 +3,9 @@ import "./About.css";
 function About(){
     return(
         <div className="About">
-            <h1>ABOUT</h1>
+            <div className="header w-100 d-flex justify-content-center align-items-center">
+                <h1>About</h1>
+            </div>
         </div>
     )
 }
