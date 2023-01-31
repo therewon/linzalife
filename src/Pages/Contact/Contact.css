@@ -1,0 +1,10 @@
+.Contact .header{
+    background-color: #134072;
+    height: 200px;
+    box-shadow: 0 0 10px grey;
+    margin-bottom: 40px;
+}
+
+.Contact .header h1{
+    color: white !important;
+}

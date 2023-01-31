@@ -6,8 +6,8 @@ function Catalog() {
     return (
         <div className="Catalog d-flex flex-column">
             <div className="header w-100 d-flex justify-content-center align-items-center flex-column">
-                <h1>All Collections</h1>
-                <input className="form-control w-25 m-2" placeholder="Type to search" />
+                <h1 className="text-4xl font-bold">All Collections</h1>
+                <input className="form-control w-25 m-2" placeholder="Axtar" />
             </div>
             <div className="contain w-100 d-flex flex-row">
                 <div className="w-25">

@@ -1,5 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
-import "./CommentCarousel.css"
+import "./CommentCarousel.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function CommentCarousel() {
   return (

@@ -6,7 +6,11 @@ function Main(){
     return(
         <div className="Main">
             <header>
-                <img src="/images/linzalife.com.png"></img>
+                <div>
+                    <a href="./">
+                    <img src="/images/linzalife.com.png"></img>
+                    </a>
+                </div>
                 <aside>
                     <button className="menu-icon"><i class="fa-solid fa-bars"></i></button>
                     <ul>

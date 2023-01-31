@@ -1,5 +1,6 @@
 import {Carousel} from 'react-bootstrap';
 import "./Carousel.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function DarkVariantExample() {
   return (
@@ -19,14 +20,16 @@ function DarkVariantExample() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
+        <div className='second-slide d-block w-100'>
         <img
           className="d-block w-100"
-          src="/images/91826.png"
-          alt="Second slide"
+          src="https://www.dryeyewa.com.au/application/files/cache/thumbnails/0bed44377f057c520d72058ee491d9fe.jpg"
+          alt="First slide"
         />
+        </div>
         <Carousel.Caption>
-          <h5 className='text-white'>Yeni iliniz mübarək</h5>
-          <p className='text-white'>Yeni ilə uyğun kampaniyalardan yararlanın</p>
+          <h5></h5>
+          <p></p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

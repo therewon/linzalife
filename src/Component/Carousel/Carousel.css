@@ -9,3 +9,7 @@
     width: 100%;
     height: 600px;
 }
+
+.carousel .second-slide{
+    background-image: url("https://eye7.b-cdn.net/wp-content/uploads/woman-putting-contact-lens-in-right-eye.jpg");
+}

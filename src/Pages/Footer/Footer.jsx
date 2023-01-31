@@ -2,7 +2,7 @@ import "./Footer.css";
 
 function Footer(){
     return(
-        <div className="Footer pt-5">
+        <div className="Footer mt-3">
             <main  data-aos="fade-up">
                 <div className="first">
                     <div>
@@ -31,7 +31,7 @@ function Footer(){
                     </div>
                 </div>
                 <div>
-                    <h3>Useful Links</h3>
+                    <h3 className="font-semibold text-lg">Useful Links</h3>
                     <ul className="link up">
                         <li>HOME</li>
                         <li>SEARCH</li>
@@ -41,7 +41,7 @@ function Footer(){
                     </ul>
                 </div>
                 <div>
-                    <h3>Subscribe Today!</h3>
+                    <h3 className="font-semibold text-lg">Subscribe Today!</h3>
                     <form>
                         <input placeholder="Your email adress"></input>
                         <button>SIGN UP</button>

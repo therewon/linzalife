@@ -1,6 +1,7 @@
 import Dropdown from 'react-bootstrap/Dropdown';
 import "./Dropdown.css";
 import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function BasicExample() {
   return (

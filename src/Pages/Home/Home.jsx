@@ -4,6 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css"
 import Carousel from "../../Component/Carousel/Carousel";
 import CommentCarousel from "../../Component/CommentCarousel/CommentCarousel";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function Home() {
@@ -14,11 +15,11 @@ function Home() {
     },[])
     return (
         <div className="home">
-            {/* <Carousel /> */}
+            <Carousel />
             <main className="Home">
                 <div data-aos="fade-up">
                     <aside >
-                        <h1>Wider Field of View & Cosmetically Superior</h1>
+                        <h1 className="text-5xl font-medium">Wider Field of View & Cosmetically Superior</h1>
                         <p>Nunc consequat nibh ut pretium vestibulum. Nulla facilisi. Cras portitor lacus dolor, quis tincidunt nisl vestibulum at. Mauris tristique diam ex, egetium dignissim enim scelerisque none.</p>
                         <p>Mauris varius mi diam, a malesuada risus cursus pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin id luctus quam. Aliquam lacinia dictum metus, ut sodales purus ultrices eget. Curabitur at mollis velit, et molestie est.</p>
                         <button>DISCOVER NOW</button>
@@ -28,7 +29,7 @@ function Home() {
                 <div data-aos="fade-up">
                     <img src="https://contactsforless.ca/wp-content/uploads/2018/07/bausch-and-lomb-sight-savers-contact-lens-case.jpg" />
                     <aside>
-                        <h1>A unique blend that celebrates your body</h1>
+                        <h1 className="text-5xl font-medium">A unique blend that celebrates your body</h1>
                         <p>Blandit turpis cursus in hac habitasse platea. In hac habitasse platea dictumst quisque sagittis purus sit. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio euornare arcu odio</p>
                         <p>Enim ut sem viverra aliquet eget sit. Ut sem nulla pharetra diam sit amet. Non arcu risus quis varius quam quisque id diam. Fermentum leo vel orci porta non pulvinar. Nec sagittis aliquam malesuada bibendum arcu vitae elementum. Donec pretium vulputate sapien nec marques querum</p>
                         <hr />
@@ -48,7 +49,7 @@ function Home() {
                     <div>
                         <img data-aos-anchor-placement="top-center" src="https://cdn.shopify.com/s/files/1/0447/5115/9447/files/grid-banner-3_360x.jpg?v=1615322225" />
                         <aside>
-                            <h1>Safe, Effective, Stable, and Convenient</h1>
+                            <h1 className="text-5xl font-medium">Safe, Effective, Stable, and Convenient</h1>
                             <p>Cras sagittis sapien tellus, id lacinia nunc suscipit vitae. Integer eget lectus et diam lobortis laoreet vitae id nunc. Pellentesque a rutrum felis. Donec eget le mauris lobortis cursus.</p>
                             <button>DISCOVER MORE</button>
                         </aside>
@@ -59,7 +60,7 @@ function Home() {
                 <main className="Home">
                 <div data-aos="fade-up" className="p-5">
                     <aside >
-                        <h1>Adaptation to contact lenses is rapid and trouble-free</h1>
+                        <h1 className="text-5xl font-medium">Adaptation to contact lenses is rapid and trouble-free</h1>
                         <p>Curabitur vitae molestie urnamia. Duis accumsan neque ac orci maximus sollicitudin. Vivamus sit in vestibulum eget sed ipsum urna amet velit consequat, rhoncus felis ut, commodo tortor.</p>
                         <p>Mauris varius mi diam, a malesuada risus cursus pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin id luctus quam. Aliquam lacinia dictum metus, ut sodales purus ultrices eget. Curabitur at mollis velit, et molestie est.</p>
                         <button>LEARN MORE</button>
@@ -85,26 +86,26 @@ function Home() {
                 </div>
                 <div data-aos="fade-up"  className="three-eyes d-flex flex-column align-items-center w-100 p-5">
                     
-                    <h1>Spread Happiness</h1>
+                    <h1 className="text-5xl font-medium">Spread Happiness</h1>
                     <p className="text-center w-75">Nam libero justo laoreet sit amet cursus sit marques ipsum</p>
                     <div>
-                        <div className="d-flex flex-column m-2"> 
-                            <img className="w-100" src="https://cdn.shopify.com/s/files/1/0447/5115/9447/articles/blog-10.jpg?v=1599039116" />
+                        <div className="flex flex-column m-2"> 
+                            <img className="w-100 mx-0" src="https://cdn.shopify.com/s/files/1/0447/5115/9447/articles/blog-10.jpg?v=1599039116" />
                             <p className="font-weight-bold">Keep your vision healthy and powerful for ever</p>
                             <a>READ MORE</a>
                         </div>
-                        <div className="d-flex flex-column m-2">
-                            <img className="w-100" src="https://cdn.shopify.com/s/files/1/0447/5115/9447/articles/blog-9.jpg?v=1599039098" />
+                        <div className="flex flex-column m-2">
+                            <img className="w-100 mx-0" src="https://cdn.shopify.com/s/files/1/0447/5115/9447/articles/blog-9.jpg?v=1599039098" />
                             <p className="font-weight-bold">Your eyes, your best tool, take care of them</p>
                             <a>READ MORE</a>
                         </div>
-                        <div className="d-flex flex-column m-2">
-                            <img className="w-100" src="https://cdn.shopify.com/s/files/1/0447/5115/9447/articles/blog-8.jpg?v=1599039137" />
+                        <div className="flex flex-column m-2">
+                            <img className="w-100 mx-0" src="https://cdn.shopify.com/s/files/1/0447/5115/9447/articles/blog-8.jpg?v=1599039137" />
                             <p  className="font-weight-bold">Q&A with Dr. Jessica Ritch, Minimally Invasive Ophthalmologist</p>
                             <a>READ MORE</a>
                         </div>
-                        <div  className="d-flex flex-column m-2">
-                            <img className="w-100" src="https://cdn.shopify.com/s/files/1/0447/5115/9447/articles/blog-7.jpg?v=1599039157" />
+                        <div  className="flex flex-column m-2">
+                            <img className="w-100 mx-0" src="https://cdn.shopify.com/s/files/1/0447/5115/9447/articles/blog-7.jpg?v=1599039157" />
                             <p className="font-weight-bold">Why We Ask So Many In Depth Questions About Your Health</p>
                             <a>READ MORE</a>
                         </div>
@@ -117,8 +118,8 @@ function Home() {
                                 </iframe>
                             </div>  
                         </div>
-                        <div className="d-flex flex-column justify-content-start px-5">
-                                <h1>Ünvan</h1>
+                        <div className="flex flex-column justify-content-start px-5">
+                                <h1 className="text-5xl font-medium">Ünvan</h1>
                                 <p className="">Bakı şəhəri,28 May,Puşkin 30A</p>
                                 <button>
                                     <a 
