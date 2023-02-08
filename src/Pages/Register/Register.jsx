@@ -1,26 +1,54 @@
-import { register } from "../../firebase";
-import { useState } from "react";
-import { Toaster } from "react-hot-toast";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { useState, useCallback } from "react";
+import { Link } from "react-router-dom";
+import { auth } from "../../firebase";
 
-function Register(){
+const Register = () => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
+    const handleSubmit = useCallback((e) => {
 
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+        if (!email || !password || !name) {
+            return;
+        }
 
-    const handleSubmit = async e =>{
-        e.preventDefault()
-        const user = await register(email,password)
-    }
+        createUserWithEmailAndPassword(auth, email, password)
+        .then((auth) => {
+            updateProfile(auth.user,{displayName:name})
+        }).catch((e) => {
+            console.log(e)
+        })
+    }, [name, email, password])
 
-
-    return(
-        <div className="Profile">
-            <Toaster position="top-right" />
-            <form onSubmit={handleSubmit}>
-                <input type="text" placeholder="E-mail adress" value={email} onChange={e=>setEmail(e.target.value)} /><br/>
-                <input type="password" placeholder="Password" value={password} onChange={e=>setPassword(e.target.value)} /><br/>
-                <button disabled={!email || !password} type="submit">Sign</button>
+    return (
+        <div className="max-w-md mx-auto py-12">
+            <h1 className="text-2xl font-semibold">Create a new account</h1>
+            <form className="flex flex-col gap-4 mt-8" onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    placeholder="Type your name ... "
+                    className="bg-gray-100 p-6 rounded"
+                    value={name}
+                    onChange={e => setName(e.target.value)}
+                />
+                <input
+                    type="email"
+                    placeholder="Type your email ... "
+                    className="bg-gray-100 p-6 rounded"
+                    value={email}
+                    onChange={e => setEmail(e.target.value)}
+                />
+                <input
+                    type="password"
+                    placeholder="Type your password ..."
+                    className="bg-gray-100 p-6 rounded"
+                    value={password}
+                    onChange={e => setPassword(e.target.value)}
+                />
+                <input type="submit" value="Sign up" className="bg-black p-6 rounded text-white" />
+                <Link to="/sign-in">Already have an account? Sign in</Link>
             </form>
         </div>
     )

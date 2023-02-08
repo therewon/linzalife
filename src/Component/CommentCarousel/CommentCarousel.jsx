@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function CommentCarousel() {
   return (
-    <div  className='CommentCarousel'>
+    <div  className='CommentCarousel hidden lg:block'>
     <Carousel variant='dark'>
       <Carousel.Item>
         <div className='d-flex flex-column '>

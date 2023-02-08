@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function BasicExample() {
   return (
-    <Dropdown>
+    <div>
+      <Dropdown>
       <Dropdown.Toggle variant='none' id="dropdown-basic">
         PAGES
       </Dropdown.Toggle>
@@ -15,6 +16,7 @@ function BasicExample() {
         <Dropdown.Item><Link to="/about">About</Link></Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
+    </div>
   );
 }
 

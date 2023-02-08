@@ -13,3 +13,7 @@
 .carousel .second-slide{
     background-image: url("https://eye7.b-cdn.net/wp-content/uploads/woman-putting-contact-lens-in-right-eye.jpg");
 }
+
+.carousel .carousel-indicators{
+    display: none;
+}

@@ -1,17 +1,4 @@
-.home{
-    width: 100%;
-    color: #134072;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.Home{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-}
+/* I didn't try to code with tailwind css ))) */
 
 .gmap_canvas {
     overflow: hidden;
@@ -29,15 +16,9 @@
     height: 100% !important;
 }
 
-.Home div{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 50px;
-    
-}
-.Home div button{
+/* ---------------------------------- */
+
+.home button{
     width: 200px;
     height: 50px;
     background-color: #134072;
@@ -47,54 +28,22 @@
     border: none;
 }
 
-.Home div *:not(.Home div img){
+.home div *:not(.Home div img){
     margin-top: 20px;
 }
 
-h1{
-    font-size: 60px;
+.home div p{
     font-weight: 500;
 }
-.Home div  p{
-    font-weight: 500;
-}
-.Home img{
-    width: 50%;
-    margin: 10px;
-}
 
-.Home .third-div{
-    background-color: #F5F5F5;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-}
-.Home .third-div div{
-    width: 80%;
-    display: flex;
-    align-items:center;
-}
-.Home .third-div div img{
-    width: 500px;
-    margin-right: 50px;
-}
-.Home .third-div aside{
-    padding: 20px;
-    width: 50%;
-}
 
-hr{
-    border: .5px solid #134072;
-    border-radius: 1px;
-}
+
+
+
+
+
 
 .Home .three-eyes{
     background-color: #EFE4DA;
 }
 
-@media screen and(max-width:1440px){
-    .Home div{
-    }
-}

@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function DarkVariantExample() {
   return (
-    <div className='carousel'>
+    <div className='carousel w-full hidden lg:block' >
     <Carousel variant="dark" className='w-100 h-100'>
       <Carousel.Item>
         <div className='h-100'>

@@ -1,9 +1,5 @@
-import { FirebaseError, initializeApp } from "firebase/app";
-
-import {getAuth ,createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut} from "firebase/auth"
-import { toast } from "react-hot-toast";
-
-
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth"
 
 const firebaseConfig = {
   apiKey: "AIzaSyDJLgCJupGXjDk-1fcj5l-AjSu-XjsVBWs",
@@ -15,37 +11,5 @@ const firebaseConfig = {
   measurementId: "G-Z9PMF5DV87"
 };
 
-
 const app = initializeApp(firebaseConfig);
-const auth = getAuth();
-
-export const register = async (email,password)=>{
-  try{
-    const {user} = await createUserWithEmailAndPassword(auth,email,password)
-    toast.success("Successfully added")
-    return user;
-  }catch(error){
-    toast.error(error.message)
-  }
-    
-}
-
-export const login = async (email,password) => {
-  try{
-    const { user } = await signInWithEmailAndPassword(auth,email,password)
-    return user;
-  }catch(error){
-    toast.error(error.message);
-  }
-}
-
-export const logout = async (email,password)=>{
-  try{
-    signOut(auth)
-    return true;
-  }catch(error){
-    toast.error(error.message)
-  }  
-}
-
-export default app;
+export const auth = getAuth(app);

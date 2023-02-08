@@ -13,6 +13,7 @@ import { useEffect } from 'react';
 import Item from './Pages/Item/Item';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
+import AuthLayout from './Component/AuthLayout/AuthLayout';
 
 
 function App() {
@@ -30,10 +31,12 @@ function App() {
         <Route path='/about' element={<About />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/profile' element={<Profile />}></Route>
-        <Route path='/register' element={<Register/>}></Route>
-        <Route path='/login' element={<Login/>}></Route>
         <Route path='/catalog' element={<Catalog />}></Route>
         <Route path='/catalog/:id' element={<Item />}></Route>
+        <Route path='/' element={<AuthLayout />}>
+          <Route path='/register' element={<Register/>} />
+          <Route path='/login' element={<Login/>} />
+        </Route>
       </Routes>
       <Footer />
       </div>
