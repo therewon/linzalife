@@ -1,12 +1,10 @@
-import "./About.css";
-
-function About() {
+export default function About() {
     return (
-        <div className="About">
-            <div className="header w-100 d-flex justify-content-center align-items-center flex-column">
-                <h1 className="text-4xl font-bold">About</h1>
+        <div className="About w-full flex flex-col items-center">
+            <div className="w-full flex justify-center items-center flex-col bg-[#134072] h-[200px] shadow-special mb-10">
+                <h1 className="text-4xl font-bold text-white">About</h1>
             </div>
-            <div className="flex items-center justify-content-center flex-col">
+            <div className="w-[80%] flex items-center justify-content-center flex-col">
                 <div>
                     <p>
                         Linza Life kontakt linzaların və onlara qulluq vasitələrinin satışını həyata keçirən internet-mağazadır. <br />
@@ -36,4 +34,3 @@ function About() {
     )
 }
 
-export default About;

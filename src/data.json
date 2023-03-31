@@ -3,49 +3,50 @@
         "id": 1,
         "name": "Acuvue Oasys",
         "price": "35 AZN",
-        "type": "Contact Lens",
+        "type": "Şəffaf linza",
         "image": "/catalogImages/AcuvueOasys.png"
     },
     {
         "id": 2,
-        "name": "Acuvue Oasys 1-Day 30 dənə",
+        "name": "Acuvue Oasys 1-Day 30-lu qutu",
         "price": "50 AZN",
-        "type": "Contact Lens",
+        "type": "Şəffaf linza",
         "image": "/catalogImages/AcuvueOasysOneDay.png"
     },
     {
         "id": 3,
         "name": "Acuvue Oasys with Transition",
         "price": "35 AZN",
-        "type": "Contact Lens",
+        "type": "Şəffaf linza",
         "image": "/catalogImages/AcuvueOasysTransition.png"
     },
     {
         "id": 4,
         "name": "Acuvue Moist",
         "price": "35 AZN",
-        "type": "Contact Lens",
+        "type": "Şəffaf linza",
         "image": "/catalogImages/AcuvueMoist.png"
     },
     {
         "id": 5,
         "name": "Precision 1",
         "price": "35 AZN",
-        "type": "Contact Lens",
+        "type": "Şəffaf linza",
         "image": "/catalogImages/Precision.png"
     },
     {
         "id": 6,
         "name": "Air Optix Plus HydraGlyde",
         "price": "45 AZN",
-        "type": "Contact Lens",
+        "type": "Şəffaf linza",
         "image": "/catalogImages/AirOptix.png"
     },
     {
         "id": 7,
         "name": "Acuvue Oasys 1-Day for Astigmatism 30-lu qutu",
         "price": "35 AZN",
-        "type": "Contact Lens",
+        "type": "Şəffaf linza",
+        "catalog": "Günlük linza",
         "image": "/catalogImages/AcuvueOasysOneDayForAstigmatism.png"
     },
     {
@@ -59,84 +60,86 @@
         "id": 9,
         "name": "Biofinity",
         "price": "35 AZN",
-        "type": "Contact Lens",
+        "type": "Şəffaf linza",
         "image": "/catalogImages/Biofinity.png"
     },
     {
         "id": 10,
         "name": "Dailies Total 1 30-lu qutu",
         "price": "60 AZN",
-        "type": "Contact Lens",
+        "type": "Şəffaf linza",
         "image": "/catalogImages/DailiesTotal.png"
     },
     {
         "id": 11,
         "name": "1 Day Acuvue TruEye 30-lu qutu",
         "price": "35 AZN",
-        "type": "Contact Lens",
+        "type": "Şəffaf linza",
+        "catalog": "Günlük linza",
         "image": "/catalogImages/AcuvueTruEye.png"
     },
     {
         "id": 12,
         "name": "Bausch+Lomb Ultra",
         "price": "35 AZN",
-        "type": "Contact Lens",
+        "type": "Şəffaf linza",
         "image": "/catalogImages/BauschLombUltra.png"
     },
     {
         "id": 13,
         "name": "Air Optix Aqua",
         "price": "35 AZN",
-        "type": "Contact Lens",
+        "type": "Şəffaf linza",
         "image": "/catalogImages/AirOptixAqua.png"
     },
     {
         "id": 14,
         "name": "Air Optix Night and Day Aqua",
         "price": "35 AZN",
-        "type": "Contact Lens",
+        "type": "Şəffaf linza",
         "image": "/catalogImages/AirOptixAquaNightAndDay.png"
     },
     {
         "id": 15,
         "name": "PureVision 2 HD",
         "price": "35 AZN",
-        "type": "Contact Lens",
+        "type": "Şəffaf linza",
         "image": "/catalogImages/PureVision.png"
     },
     {
         "id": 16,
         "name": "Bausch+Lomb Ultra for Astigmatism",
         "price": "30 AZN",
-        "type": "Contact Lens",
+        "type": "Şəffaf linza",
         "image": "/catalogImages/BauschLombUltraForAstigmatism.png"
     },
     {
         "id": 17,
         "name": "Air Optix for Astigmatism",
         "price": "35 AZN",
-        "type": "Contact Lens",
+        "type": "Şəffaf linza",
         "image": "/catalogImages/AirOptixForAstigmatism.png"
     },
     {
         "id": 18,
         "name": "Biofinity Toric",
         "price": "35 AZN",
-        "type": "Contact Lens",
+        "type": "Şəffaf linza",
         "image": "/catalogImages/BiofinityToric.png"
     },
     {
         "id": 19,
         "name": "Medeo 1-Day",
         "price": "30 AZN",
-        "type": "Contact Lens",
+        "type": "Rəngli linza",
+        "catalog": "Günlük linza",
         "image": "/catalogImages/MedeoOneDay.png"
     },
     {
         "id": 20,
         "name": "Medeo",
         "price": "30 AZN",
-        "type": "Contact Lens",
+        "type": "Rəngli linza",
         "image": "/catalogImages/Medeo.png"
     },
     {
@@ -150,84 +153,84 @@
         "id": 22,
         "name": "Rainbow Contact Lens",
         "price": "30 AZN",
-        "type": "Contact Lens",
+        "type": "Rəngli linza",
         "image": "/catalogImages/Rainbow.png"
     },
     {
         "id": 23,
         "name": "Hypnose Lens",
         "price": "30 AZN",
-        "type": "Contact Lens",
+        "type": "Rəngli linza",
         "image": "/catalogImages/HypnoseLens.png"
     },
     {
         "id": 24,
         "name": "Labella",
         "price": "30 AZN",
-        "type": "Contact Lens",
+        "type": "Rəngli linza",
         "image": "/catalogImages/Labella.png"
     },
     {
         "id": 25,
         "name": "Iconic",
         "price": "25 AZN",
-        "type": "Contact Lens",
+        "type": "Rəngli linza",
         "image": "/catalogImages/Iconic.png"
     },
     {
         "id": 26,
         "name": "Solotica 1-Year",
         "price": "90 AZN",
-        "type": "Contact Lens",
+        "type": "Rəngli linza",
         "image": "/catalogImages/SoloticaOneYear.png"
     },
     {
         "id": 27,
         "name": "Solotica 3-Months",
         "price": "45 AZN",
-        "type": "Contact Lens",
+        "type": "Rəngli linza",
         "image": "/catalogImages/SoloticaMonth.png"
     },
     {
         "id": 28,
         "name": "Renu Multi Plus 360ml",
         "price": "20 AZN",
-        "type": "Lens Solution",
+        "type": "Linza suyu",
         "image": "/catalogImages/RenuMultiPlus360ml.png"
     },
     {
         "id": 29,
         "name": "Renu Multi Plus 120ml",
         "price": "5 AZN",
-        "type": "Lens Solution",
+        "type": "Linza suyu",
         "image": "/catalogImages/RenuMultiPlus120ml.png"
     },
     {
         "id": 30,
         "name": "Biotrue 300ml",
         "price": "20 AZN",
-        "type": "Lens Solution",
+        "type": "Linza suyu",
         "image": "/catalogImages/Biotrue.png"
     },
     {
         "id": 31,
         "name": "Opti-Free Express 355ml",
         "price": "20 AZN",
-        "type": "Lens Solution",
+        "type": "Linza suyu",
         "image": "/catalogImages/OptiFreeExpress355ml.png"
     },
     {
         "id": 32,
         "name": "ZEISS All In One Advance 360ml",
         "price": "20 AZN",
-        "type": "Lens Solution",
+        "type": "Linza suyu",
         "image": "/catalogImages/ZeissAllInOneAdvance360ml.png"
     },
     {
         "id": 33,
         "name": "Johnson & Johnson Acuvue RevitaLens 360ml",
         "price": "5 AZN",
-        "type": "Lens Solution",
+        "type": "Linza suyu",
         "image": "/catalogImages/Johnson.png"
     }
     

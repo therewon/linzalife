@@ -7,7 +7,7 @@ function CommentCarousel() {
     <div  className='CommentCarousel hidden lg:block'>
     <Carousel variant='dark'>
       <Carousel.Item>
-        <div className='d-flex flex-column '>
+        <div className='d-flex flex-column container'>
             <img src='https://cdn.shopify.com/s/files/1/0447/5115/9447/files/testi1.jpg?v=1615322226' 
                 alt='boy'
                 className='first-image'
@@ -24,7 +24,7 @@ function CommentCarousel() {
         </div>
       </Carousel.Item>
       <Carousel.Item>
-         <div className='d-flex flex-column '>
+         <div className='d-flex flex-column container'>
             <img src='https://cdn.shopify.com/s/files/1/0447/5115/9447/files/testi2.jpg?v=1615322226' 
                 alt='boy'
                 className='first-image'

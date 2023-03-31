@@ -7,7 +7,7 @@ function Contact() {
                 <h1 className="text-4xl font-bold">Contact Us</h1>
             </div>
 
-            <div className="flex flex-row text-center justify-content-around">
+            <div className="flex flex-col lg:flex-row text-center justify-content-around">
                 <div className="flex flex-col items-center">
                     <div className="text-3xl m-3 w-24 h-24 border-2 border-[#134072] rounded-full flex items-center justify-content-center">
                         <i className="fa-solid fa-location-dot"></i>

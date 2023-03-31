@@ -12,26 +12,34 @@ function Item() {
                 return e.id == id;
             }).map((e, index) => {
                 return (
-                    <div className="item">
+                    <div className="item" key={index}>
                         <header>
-                            <h1 className="text-light">Product</h1>
+                            <h1 className="text-light text-5xl">Product</h1>
                             <p className="text-light">{e.name}</p>
                         </header>
-                        <main className="d-flex flex-row">
+                        <main className="flex md:flex-row flex-col container">
                             <img src={e.image} className="w-50" />
                             <div>
-                                <div className="title">
-                                    <h1>{e.name}</h1>
-                                    <h5>Type: {e.type}</h5>
-                                    <h5>Price: {e.price}</h5>
-                                </div>
+                                <h1 className="text-3xl font-bold">{e.name}</h1>
+                                <table className="flex gap-4">
+                                    <td className="flex flex-col py-4 gap-2 text-xl">
+                                        <tr>Price:</tr>
+                                        <tr>Type:</tr>
+                                        <tr>Availability:</tr>
+                                    </td>
+                                    <td className="flex flex-col py-4 gap-2 text-xl">
+                                        <tr>{e.price}</tr>
+                                        <tr>{e.type}</tr>
+                                        <tr className="text-green-600">In Stock!</tr>
+                                    </td>
+                                </table>
                                 <div className="d-flex flex-column">
                                     <button className="mb-2 mt-5">Sevimlilərə əlavə et</button>
                                     <button>Sifariş üçün <i className="fa-brands fa-whatsapp"></i></button>
                                 </div>
                             </div>
                         </main>
-                        <aside>
+                        <aside className="container">
                             <div className="description">
                                 <div className="title-selector">
                                     <button className="active">Product Description</button>

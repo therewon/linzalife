@@ -35,15 +35,12 @@ ul{
     margin-top: 20px;
 }
 
-.Footer .logo{
-    display: flex;
-    flex-direction: row;
-    font-size: 30px;
-}
+
 
 .Footer .first{
     width: 50%;
 }
+
 
 
 .Footer button,.Footer input{
