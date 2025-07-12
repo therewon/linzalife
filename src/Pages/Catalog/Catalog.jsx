@@ -4,18 +4,19 @@ import Data from "../../data.json"
 import { useState } from "react";
 import AdsCarousel from "../../Component/AdsCarousel/AdsCarousel";
 import Info from "../../Component/Info/Info";
+import Bakset from "../../Component/Basket/Bakset";
 
 function Catalog() {
     const [catalog, setCatalog] = useState("All");
     const [show, setShow] = useState(false);
     const [sort, setSort] = useState(true);
-    const [count,setCount] = useState();
+    const [count, setCount] = useState(0);
+
 
     let LensName = [];
     Data.map((e, index) => {
         return LensName.push(e.name)
     });
-
 
     const filterHandle = () => {
         setShow(!show);
@@ -26,54 +27,35 @@ function Catalog() {
         setSort(!sort);
     }
 
-    return ( 
+    return (
         <div className="Catalog flex flex-col bg-gray-100">
             <div className="flex justify-center items-center bg-white border-y-2 w-full">
                 <div className="w-full justify-center flex container">
-                <div className="w-[80%] h-16 flex flex-row justify-around items-center cursor-pointer font-bold ">
-                    <div onClick={(e) => {
-                        setCatalog('All')
-                    }}>Bütün məhsullar</div>
-                    <div onClick={(e) => {
-                        setCatalog(e.target.innerText)
-                    }}>Şəffaf linza</div>
-                    <div onClick={(e) => {
-                        setCatalog(e.target.innerText)
-                    }}>Günlük linza</div>
-                    <div onClick={(e) => {
-                        setCatalog(e.target.innerText)
-                    }}>Rəngli linza</div>
-                    <div onClick={(e) => {
-                        setCatalog(e.target.innerText)
-                    }}>Astiqmat linza</div>
-                    <div onClick={(e) => {
-                        setCatalog(e.target.innerText)
-                    }}>Linza suyu</div>
-                </div>
+                    <div className="w-[80%] h-16 lg:flex flex-row justify-between items-center cursor-pointer font-bold hidden">
+                        <div onClick={(e) => {
+                            setCatalog('All')
+                        }}>Bütün məhsullar</div>
+                        <div onClick={(e) => {
+                            setCatalog(e.target.innerText)
+                        }}>Şəffaf linza</div>
+                        <div onClick={(e) => {
+                            setCatalog(e.target.innerText)
+                        }}>Günlük linza</div>
+                        <div onClick={(e) => {
+                            setCatalog(e.target.innerText)
+                        }}>Rəngli linza</div>
+                        <div onClick={(e) => {
+                            setCatalog(e.target.innerText)
+                        }}>Astiqmat linza</div>
+                        <div onClick={(e) => {
+                            setCatalog(e.target.innerText)
+                        }}>Linza suyu</div>
+                    </div>
                 </div>
             </div>
 
-            <div className="flex flex-col px-20 container" >
+            <div className="flex flex-col" >
                 <div className="my-4">
-                    <div className="flex flex-row gap-2 justify-center">
-                        {/* <div onClick={filterHandle} className="cursor-pointer my-4 border-2 border-[#134072] w-44 h-10 flex flex-row justify-content-center items-center gap-2">*/}
-                        {/*    <h4 className="font-semibold text-sm">Advanced Filter</h4>*/}
-                        {/*    <i className="fa-solid fa-filter"></i>*/}
-                        {/*</div>*/}
-                        {/*<div onClick={sortHandle} className="cursor-pointer my-4 border-2 border-[#134072] w-44 h-10 flex flex-row justify-content-center items-center gap-2">*/}
-                        {/*    <h4 className="font-semibold text-sm">Sort by</h4>*/}
-                        {/*    {sort ? <i className="fa-solid fa-arrow-down-a-z"></i> :*/}
-                        {/*        <i className="fa-solid fa-arrow-up-a-z"></i>}*/}
-                        {/*</div>*/}
-                        {/*<div className="w-[400px] m-auto">*/}
-                        {/*    <input className="form-control w-[400px]" placeholder="Axtar" />*/}
-                        {/*</div> */}
-                        <div className="">
-                            <AdsCarousel />
-                        </div>
-                    </div>
-
-
 
                     {show &&
                         <div className="flex flex-row">
@@ -104,34 +86,36 @@ function Catalog() {
 
                 <div className="flex flex-row gap-0 justify-between items-start mx-auto w-[80%]">
                     <Info />
-                    <div className="flex flex-col lg:flex-row sm:flex-wrap justify-end pt-2 pl-2 w-full">
+                    <div className="flex flex-row flex-wrap lg:justify-end justify-center pt-2 pl-2 w-full">
                         {Data.filter((e) => {
-                            if(catalog == "All"){ 
+                            if (catalog == "All") {
                                 return e.type;
-                            }else{
+                            } else {
                                 return e.type == catalog;
                             }
                         }).map((e) => {
                             return (
-                                
-                                    <div className=" mb-2 mx-2 flex flex-col items-center border-2 border-grey-400 hover:border-[#134072] duration-500 bg-white w-[250px]  h-[400px] justify-between">
-                                        <div className="h-[200px] w-[235px] flex justify-center items-center px-2">
-                                            <img src={e.image} className="w-[250px] max-h-[150px]" alt="card" />
-                                        </div>
-                                        <div className=" text-center flex flex-col gap-2 h-[50%] justify-around">
+
+                                <div className=" mb-2 mx-2 flex flex-col items-center border-2 border-grey-400 hover:border-[#134072] duration-500 bg-white w-[250px]  h-[400px] justify-between">
+                                    <div className="h-[200px] w-[235px] flex justify-center items-center px-2">
+                                        <img src={e.image} className="w-[250px] max-h-[150px]" alt="card" />
+                                    </div>
+                                    <div className=" text-center flex flex-col gap-2 h-[50%] justify-around">
                                         <Link to={`/catalog/${e.id}`} key={e.id}>
                                             <h5 className="name font-bold">{e.name}</h5>
                                         </Link>
-                                            <div className="flex flex-row items-center gap-2 justify-around">
-                                                <p className="text-red-500 font-bold text-center">{e.price}</p>
-                                                <button 
-                                                    className="w-[150px] h-[40px] bg-[#134072] hover:bg-red-500 rounded-full text-white text-md duration-300 " 
-                                                    onClick={()=>{
-                                                        setCount(count+1)
+                                        <div className="flex flex-row items-center gap-2 justify-around">
+                                            <p className="text-red-500 font-bold text-center">{e.price}</p>
+                                            <button
+                                                className="w-[150px] h-[40px] bg-[#134072] hover:bg-red-500 rounded-full text-white text-md duration-300 "
+                                                onClick={() => {
+                                                    setCount(count + 1)
+                                                    console.log(count)
+                                                    localStorage.setItem("num", count)
                                                 }} >+ Add to cart</button>
-                                            </div>
                                         </div>
                                     </div>
+                                </div>
                             )
                         })}
                     </div>

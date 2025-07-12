@@ -2,7 +2,7 @@
 
 function Info(){
     return(
-        <div className="bg-white p-4 mt-2 w-[30%]">
+        <div className="bg-white p-4 mt-2 w-[30%] hidden lg:block">
                         <div>
                             <h1 className="font-bold text-lg"><i className="fa-solid fa-globe mr-2"></i>Markalar</h1>
                             <ul className="flex flex-col gap-3 m-4 text-sm">

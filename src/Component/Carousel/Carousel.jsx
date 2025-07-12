@@ -16,7 +16,7 @@ function DarkVariantExample() {
             />
             <div className='absolute left-[50%] translate-x-[-50%] top-[40%] flex flex-col gap-3 w-[80%] sm:text-left'>
               <p className='text-md font-bold md:text-xl text-sm'>VISION FOR FUTURE</p>
-              <h1 className='md:text-[60px] text-4xl font-medium'>See Better, Look Perfect</h1>
+              <h1 className='md:text-[60px] text-4xl font-medium my-2'>See Better, Look Perfect</h1>
               <Link to="/catalog">
               <button className='text-white bg-[#134072] md:p-3 p-2 rounded font-semibold'>
                 DISCOVER NOW 
@@ -35,7 +35,7 @@ function DarkVariantExample() {
             />
             <div className='absolute left-[50%] translate-x-[-50%] top-[40%] flex flex-col md:gap-4 gap-2 w-[80%] sm:text-left text-center'>
               <p className='text-md font-bold md:text-xl text-sm'>MULTI USE LENSES</p>
-              <h1 className='md:text-[60px] text-4xl font-medium'>Color Zero Power 3</h1>
+              <h1 className='md:text-[60px] text-4xl font-medium my-2'>Color Zero Power 3</h1>
               <Link to="/catalog">
               <button className='text-white bg-[#134072] md:p-3 p-2 rounded font-semibold'>
                 DISCOVER NOW
@@ -53,7 +53,7 @@ function DarkVariantExample() {
             />
             <div className='absolute left-[50%] translate-x-[-50%] top-[40%] flex flex-col md:gap-4 gap-2 w-[80%] sm:text-left text-center'>
               <p className='text-md font-bold md:text-xl text-sm'>SPOT THE DIFFERNECE</p>
-              <h1 className='md:text-[60px] text-4xl font-medium'>Super Thin Contact Lens</h1>
+              <h1 className='md:text-[60px] text-4xl font-medium my-2'>Super Thin Contact Lens</h1>
               <Link to="/catalog">
               <button className='text-white bg-[#134072] md:p-3 p-2 rounded font-semibold'>
                 DISCOVER NOW
